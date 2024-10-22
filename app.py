@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("diabetes_prediction_dataset.csv")
+data = pd.read_csv(r"./diabetes_prediction_dataset.csv")
 data["gender"] = data["gender"].map({"Male": 1, "Female": 2, "Other": 3})
 data["smoking_history"] = data["smoking_history"].map({
     "never": 1, "No Info": 2, "current": 3, "former": 4, "ever": 5, "not current": 6
